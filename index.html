@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASEYRHODES XMD- Advanced WhatsApp Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>  
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .deploy-section, .session-section {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: white;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .deploy-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .deploy-button, .session-button, .channel-button {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s;
+            margin: 0.5rem;
+        }
+
+        .deploy-button:hover, .session-button:hover, .channel-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .heroku {
+            background: #430098;
+        }
+
+        .pterodactyl {
+            background: #2f3640;
+        }
+
+        .session-button {
+            background: #00bf8f;
+            margin: 1rem auto;
+            display: inline-flex;
+        }
+
+        .channel-alert {
+            background: #25D366;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .channel-button {
+            background: #128C7E;
+            margin: 1rem auto;
+            display: inline-flex;
+        }
+
+        .features {
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow-x: auto;
+            display: block;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .feature-table th, .feature-table td {
+            padding: 1rem;
+            border: 1px solid #eee;
+            min-width: 200px;
+        }
+
+        .feature-table th {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .update-section {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #1a1a1a;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .workflow-code {
+            background: #2f3640;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+
+        .workflow-code pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .support-button {
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .logo {
+                max-width: 90%;
+            }
+
+            .deploy-section, .session-section {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .deploy-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .deploy-button, .session-button, .channel-button {
+                width: 80%;
+                justify-content: center;
+            }
+
+            .workflow-code {
+                font-size: 14px;
+            }
+        }
+
+        /* Desktop-specific styles */
+        @media (min-width: 769px) {
+            .deploy-section, .session-section, .channel-alert {
+                max-width: 1200px;
+                margin: 2rem auto;
+            }
+
+            .logo {
+                max-width: 700px;
+            }
+
+            .workflow-code {
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.ibb.co/vCsY0jPS/lordcasey.jpg" alt="CASEYRHODES-XMD" class="logo">
+
+          <h1>CASEYRHODES XMD</h1>   
+        <h1>AUDIO</h1>
+  <div id="music-player">
+      <audio controls autoplay loop>
+          <source src="https://files.catbox.moe/92gu1n.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+  </div>
+        
+        <p>Advanced WhatsApp Bot with Powerful Features</p>
+    </div>
+
+    <div class="channel-alert">
+        <h3>📢 Follow Our Official Channel!</h3>
+        <p>Stay updated with the latest features and announcements</p>
+        <a href="https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E" class="channel-button">
+            <i class="fab fa-whatsapp"></i>&nbsp; Join Channel
+        </a>
+    </div>
+
+    <div class="session-section">
+        <h2>GET YOUR SESSION ID</h2>
+        <p>Generate your WhatsApp session ID to deploy the bot</p>
+        <a href="https://caseypaircode-e6b138f710a8.herokuapp.com/" class="session-button">
+            <i class="fas fa-qrcode"></i>&nbsp; GET PAIRING CODE 
+        </a>
+    </div>
+
+    <div class="deploy-section">
+        <h2>DEPLOY YOUR BOT</h2>
+        <div class="deploy-buttons">
+            <a href="https://dashboard.heroku.com/new-app?template=https://github.com/caseyweb/CASEYRHODES-XMD" class="deploy-button heroku">
+                <i class="fab fa-heroku"></i>&nbsp; Deploy on Heroku
+            </a>
+            <a href="https://github.com/caseyweb/QUEEEN-CHARITY/archive/refs/heads/main.zip" class="deploy-button pterodactyl">
+                <i class="fas fa-server"></i>&nbsp; Download for Pterodactyl
+            </a>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2>Features</h2>
+        <!-- Your existing feature table here -->
+    </div>
+
+    <div class="update-section">
+        <h2>Auto-Update Feature</h2>
+        <p>Bot updates automatically with the latest features</p>
+        <div class="workflow-code">
+            <pre>
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm start</pre>        
+        </div>
+        <a href="https://wa.me/+254112192119?text=𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒+𝐗𝐌𝐃+𝐕𝟐" class="support-button">
+            <i class="fab fa-whatsapp"></i> Report Issues
+        </a>
+    </div>
+</body>
+</html>
